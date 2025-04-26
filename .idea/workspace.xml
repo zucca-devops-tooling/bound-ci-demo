@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="Fix plugin version">
+    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="Add info">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-api/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery-app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -442,7 +445,7 @@
       <updated>1745611529776</updated>
       <workItem from="1745611530919" duration="3557000" />
       <workItem from="1745645674477" duration="2619000" />
-      <workItem from="1745648474118" duration="22613000" />
+      <workItem from="1745648474118" duration="24749000" />
     </task>
     <task id="LOCAL-00001" summary="First part of initial code">
       <option name="closed" value="true" />
@@ -476,7 +479,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745673179332</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added provider">
+      <option name="closed" value="true" />
+      <created>1745674038684</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745674038684</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add info">
+      <option name="closed" value="true" />
+      <created>1745675515771</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745675515771</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add info">
+      <option name="closed" value="true" />
+      <created>1745675597190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745675597190</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,6 +525,8 @@
     <MESSAGE value="Rest of the code" />
     <MESSAGE value="Fix gradlew executable permissions" />
     <MESSAGE value="Fix plugin version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix plugin version" />
+    <MESSAGE value="Added provider" />
+    <MESSAGE value="Add info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add info" />
   </component>
 </project>

@@ -1,3 +1,20 @@
+pluginManagement {
+    repositories {
+        maven {
+            url = uri("https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot")
+
+            credentials {
+                username = gradle.startParameter.projectProperties["JFROG_CREDENTIALS_USR"]
+                password = gradle.startParameter.projectProperties["JFROG_CREDENTIALS_PSW"]
+            }
+        }
+        gradlePluginPortal()
+    }
+}
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+}
+
 rootProject.name = "bound-ci-demo"
 
 include 'gallery-api', 'gallery-app', 'functional-tests'
