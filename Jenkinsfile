@@ -15,12 +15,12 @@ pipeline {
         }
         stage('Generate Api') {
             steps {
-                sh './gradlew clean --no-daemon :gallery-api:openApiGenerate'
+                sh './gradlew clean --no-daemon :gallery-api:openApiGenerate -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Publish Api') {
             steps {
-                sh './gradlew clean --info --no-daemon :gallery-api:publish'
+                sh './gradlew clean --info --no-daemon :gallery-api:publish -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Build App') {
@@ -30,12 +30,12 @@ pipeline {
         }
         stage('Publish App') {
             steps {
-                sh './gradlew clean --no-daemon :gallery-app:publish'
+                sh './gradlew clean --no-daemon :gallery-app:publish -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Test') {
             steps {
-                sh './gradlew clean --no-daemon :functional-test:test'
+                sh './gradlew clean --no-daemon :functional-test:test -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
     }
