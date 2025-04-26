@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="First part of initial code">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery-app/src/main/java/dev/zucca_ops/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-tests/src/test/java/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-tests/src/test/java/FunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery-app/src/main/java/dev/zucca-ops/ServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="Rest of the code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +85,24 @@
                 <item name="bound-ci-demo" type="f1a62948:ProjectNode" />
                 <item name="functional-tests" type="2d1252cf:ModuleNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bound-ci-demo" type="f1a62948:ProjectNode" />
+                <item name="gallery-api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bound-ci-demo" type="f1a62948:ProjectNode" />
+                <item name="gallery-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bound-ci-demo" type="f1a62948:ProjectNode" />
+                <item name="gallery-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="openapi tools" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -429,7 +443,7 @@
       <updated>1745611529776</updated>
       <workItem from="1745611530919" duration="3557000" />
       <workItem from="1745645674477" duration="2619000" />
-      <workItem from="1745648474118" duration="21079000" />
+      <workItem from="1745648474118" duration="21729000" />
     </task>
     <task id="LOCAL-00001" summary="First part of initial code">
       <option name="closed" value="true" />
@@ -439,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745656548973</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rest of the code">
+      <option name="closed" value="true" />
+      <created>1745672673172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745672673172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +480,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First part of initial code" />
-    <option name="LAST_COMMIT_MESSAGE" value="First part of initial code" />
+    <MESSAGE value="Rest of the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest of the code" />
   </component>
 </project>
