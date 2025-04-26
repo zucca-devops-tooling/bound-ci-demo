@@ -2,17 +2,16 @@ allprojects {
     group = 'dev.zucca-ops'
 
     repositories {
+        mavenCentral()
         maven {
-            url = uri('https://zucca.jfrog.io/artifactory/publisher-libs-snapshot')
+            url = uri('https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot')
 
             credentials {
-                username = properties['jfrogUser']
-                password = properties['jfrogPassword']
+                username = findProperty('JFROG_CREDENTIALS_USR')
+                password = findProperty('JFROG_CREDENTIALS_PSW')
             }
         }
-        mavenCentral()
     }
-
 }
 
 version='2.5.0'
