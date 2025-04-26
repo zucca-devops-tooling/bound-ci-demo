@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="Fix gradlew executable permissions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-api/build.gradle" afterDir="false" />
+    <list default="true" id="df64369b-e18b-4848-a5c2-ae781c4f7871" name="Changes" comment="Fix plugin version">
       <change beforePath="$PROJECT_DIR$/gallery-app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-app/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -444,7 +442,7 @@
       <updated>1745611529776</updated>
       <workItem from="1745611530919" duration="3557000" />
       <workItem from="1745645674477" duration="2619000" />
-      <workItem from="1745648474118" duration="21877000" />
+      <workItem from="1745648474118" duration="22613000" />
     </task>
     <task id="LOCAL-00001" summary="First part of initial code">
       <option name="closed" value="true" />
@@ -470,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745673065943</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix plugin version">
+      <option name="closed" value="true" />
+      <created>1745673179332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745673179332</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +497,7 @@
     <MESSAGE value="First part of initial code" />
     <MESSAGE value="Rest of the code" />
     <MESSAGE value="Fix gradlew executable permissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix gradlew executable permissions" />
+    <MESSAGE value="Fix plugin version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix plugin version" />
   </component>
 </project>

@@ -6,7 +6,9 @@ plugins {
 version = rootProject.version
 
 dependencies {
-    api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+    api provider {
+        "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+    }
 }
 
 publisher {
