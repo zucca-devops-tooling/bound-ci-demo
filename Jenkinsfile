@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Build App') {
             steps {
-                sh './gradlew clean --no-daemon :gallery-app:build -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
+                sh './gradlew clean --resolve-dependencies --no-daemon :gallery-app:build -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Publish App') {
