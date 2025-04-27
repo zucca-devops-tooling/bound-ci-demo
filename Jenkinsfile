@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Publish Api') {
             steps {
-                sh './gradlew clean --info --no-daemon :gallery-api:publish -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
+                sh './gradlew --info --no-daemon :gallery-api:publish -PJFROG_CREDENTIALS_USR=$JFROG_CREDENTIALS_USR -PJFROG_CREDENTIALS_PSW=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Build App') {
