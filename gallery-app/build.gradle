@@ -5,7 +5,6 @@ plugins {
 
 version = rootProject.version
 
-evaluationDependsOn(':gallery-api')
 
 dependencies {
     api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
