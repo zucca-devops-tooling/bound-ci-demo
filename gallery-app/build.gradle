@@ -7,12 +7,9 @@ version = rootProject.version
 evaluationDependsOn(':gallery-api')
 
 dependencies {
-    api("dev.zucca-ops:gallery-api") {
-        version {
-            strictly(project(':gallery-api').version)
-        }
-    }
+    api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
 }
+
 configurations.configureEach { config ->
     if (config.name == "compileClasspath") {
         config.incoming.beforeResolve {
