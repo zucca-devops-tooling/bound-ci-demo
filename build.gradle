@@ -12,6 +12,14 @@ allprojects {
                 password = System.getenv('JFROG_CREDENTIALS_PSW')
             }
         }
+        maven {
+            url = uri('https://zuccadev.jfrog.io/artifactory/publisher-libs-release')
+
+            credentials {
+                username = System.getenv('JFROG_CREDENTIALS_USR')
+                password = System.getenv('JFROG_CREDENTIALS_PSW')
+            }
+        }
     }
 }
 
