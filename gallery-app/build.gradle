@@ -9,6 +9,8 @@ dependencies {
     api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
 }
 
+evaluationDependsOn(':gallery-api')
+
 publisher {
     dev {
         target = 'https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot'
