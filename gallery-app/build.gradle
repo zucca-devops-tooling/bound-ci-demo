@@ -5,7 +5,7 @@ plugins {
 
 version = rootProject.version
 
-def apiVersion = project(':gallery-api').extensions.findByName("publisher").resolvedVersion
+def apiVersion = project(':gallery-api').extensions.findByName("publisher")?.resolvedVersion
 
 dependencies {
     api "dev.zucca-ops:gallery-api:${apiVersion}"
