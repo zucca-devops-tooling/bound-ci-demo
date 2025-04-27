@@ -7,13 +7,17 @@ version = rootProject.version
 
 evaluationDependsOn(':gallery-api')
 
-project(':gallery-api').afterEvaluate {
-    def apiVersion = project(':gallery-api').extensions.findByName("publisher")?.resolvedVersion
-
-    dependencies {
-        api "dev.zucca-ops:gallery-api:${apiVersion}"
+dependencies {
+    api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+}
+configurations.configureEach { config ->
+    if (config.name == "compileClasspath") {
+        config.incoming.beforeResolve {
+            println "🔥 compileClasspath is being resolved at project ${project.name} (TIME = ${System.currentTimeMillis()})"
+        }
     }
 }
+
 
 publisher {
     dev {
