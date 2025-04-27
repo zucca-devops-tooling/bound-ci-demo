@@ -26,7 +26,7 @@ publisher {
     prod {
         target = 'https://zuccadev.jfrog.io/artifactory/publisher-libs-release'
     }
-    usernameProperty = 'JFROG_CREDENTIALS_USR'
-    passwordProperty = 'JFROG_CREDENTIALS_PSW'
+    usernameProperty = 'jfrogUser'
+    passwordProperty = 'jfrogPass'
     gitFolder = '../'
 }
