@@ -5,10 +5,13 @@ plugins {
 
 version = rootProject.version
 
-
-dependencies {
-    api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+afterEvaluate {
+    println("evaluating dependency")
+    dependencies {
+        api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+    }
 }
+
 configurations.configureEach { config ->
     if (config.name == "compileClasspath") {
         config.incoming.beforeResolve {
