@@ -4,6 +4,7 @@ plugins {
 }
 
 version = rootProject.version
+evaluationDependsOn(':gallery-api')
 
 afterEvaluate {
     println("evaluating dependency")
