@@ -29,6 +29,7 @@ This project leverages [gradle-publisher](https://github.com/zucca-devops-toolin
 - Route publishing automatically to different repositories depending on the environment (snapshots vs. releases).
 - Simplify Gradle configurations so dynamic versioning and repository selection are automatic and reliable.
 - Support realistic build and testing flows by consuming already-published artifacts instead of local source builds.
+- Ensure idempotent publishing by verifying whether an artifact already exists before attempting to publish (in production environments only).
 
 ## 📈 Impact
 
@@ -36,5 +37,5 @@ This project leverages [gradle-publisher](https://github.com/zucca-devops-toolin
 - **Realistic** simulation of real-world API consumption during CI and functional tests.
 - **Safer** artifact management by separating development and production artifacts cleanly.
 - **Simplified** developer experience without manual CI conditionals for versioning or repository routing.
-
+- **Rebuild stability**: replaying or rerunning a build does not cause failures with idempotent builds.
 ---
