@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.0"
+    testImplementation provider {
+        "dev.zucca-ops:gallery-app:${project(':gallery-app').version}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+evaluationDependsOn(':gallery-app')

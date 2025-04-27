@@ -1,0 +1,32 @@
+plugins {
+    id 'java-library'
+    id 'dev.zucca-ops.gradle-publisher' version "${publisherVersion}"
+}
+
+version = rootProject.version
+evaluationDependsOn(':gallery-api')
+
+dependencies {
+    api "dev.zucca-ops:gallery-api:${project(':gallery-api').version}"
+}
+
+configurations.configureEach { config ->
+    if (config.name == "compileClasspath") {
+        config.incoming.beforeResolve {
+            println "🔥 compileClasspath is being resolved at project ${project.name} (TIME = ${System.currentTimeMillis()})"
+        }
+    }
+}
+
+
+publisher {
+    dev {
+        target = 'https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot'
+    }
+    prod {
+        target = 'https://zuccadev.jfrog.io/artifactory/publisher-libs-release'
+    }
+    usernameProperty = 'jfrogUser'
+    passwordProperty = 'jfrogPass'
+    gitFolder = '../'
+}

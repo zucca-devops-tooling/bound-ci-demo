@@ -1,0 +1,3 @@
+rootProject.name = "bound-ci-demo"
+
+include 'gallery-api', 'gallery-app', 'functional-tests'

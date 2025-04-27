@@ -1,0 +1,18 @@
+allprojects {
+    group = 'dev.zucca-ops'
+    ext.publisherVersion = '1.0.3'
+
+    repositories {
+        mavenCentral()
+        maven {
+            url = uri('https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot')
+
+            credentials {
+                username = System.getenv('JFROG_CREDENTIALS_USR')
+                password = System.getenv('JFROG_CREDENTIALS_PSW')
+            }
+        }
+    }
+}
+
+version='2.5.0'
