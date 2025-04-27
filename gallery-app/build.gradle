@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'dev.zucca-ops.gradle-publisher' version '1.0.2-fix-publish-selector-SNAPSHOT'
+    id 'dev.zucca-ops.gradle-publisher' version "${publisherVersion}"
 }
 
 version = rootProject.version
