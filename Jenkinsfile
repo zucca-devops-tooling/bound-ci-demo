@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Publish Api') {
             steps {
-                sh './gradlew --info --no-daemon :gallery-api:publish'
+                sh './gradlew --info --no-daemon :gallery-api:publish -PjfrogUser=$JFROG_CREDENTIALS_USR -PjfrogPass=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Build App') {
@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Publish App') {
             steps {
-                sh './gradlew clean --no-daemon :gallery-app:publish'
+                sh './gradlew clean --no-daemon :gallery-app:publish -PjfrogUser=$JFROG_CREDENTIALS_USR -PjfrogPass=$JFROG_CREDENTIALS_PSW'
             }
         }
         stage('Test') {

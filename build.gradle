@@ -8,8 +8,8 @@ allprojects {
             url = uri('https://zuccadev.jfrog.io/artifactory/publisher-libs-snapshot')
 
             credentials {
-                username = findProperty('JFROG_CREDENTIALS_USR')
-                password = findProperty('JFROG_CREDENTIALS_PSW')
+                username = System.getenv('JFROG_CREDENTIALS_USR')
+                password = System.getenv('JFROG_CREDENTIALS_PSW')
             }
         }
     }
