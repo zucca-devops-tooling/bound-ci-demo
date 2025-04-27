@@ -12,14 +12,16 @@ Built to simulate real-world CI environments handling multiple PRs and snapshot 
 
 ## 🐞 Problem
 
-- **Versioning Collisions**:  
-  When multiple engineers work on the same base version (e.g., `2.5.0`), publishing `-SNAPSHOT` artifacts can lead to overwrites and collisions.
-- **Producer-Consumer Separation**:  
-  Without publishing, consumers are forced to compile sources locally, breaking real-world usage patterns.
-- **Repository Pollution**:  
-  Mixing snapshots and releases into the same repository increases risks of accidental release pollution.
-- **Static Versioning in CI**:  
-  Without dynamic versioning based on the branch or PR, snapshot uploads are unreliable in parallel CI environments.
+- **Snapshot Overriding Risk**:  
+  When multiple engineers work on the same base version (e.g., `2.5.0`), publishing `-SNAPSHOT` artifacts can cause one engineer’s upload to override another's.  
+  This results in unpredictable retrievals during testing, where consumers may unknowingly fetch someone else's artifact instead of their own.
+- **Environment-Aware Publishing Complexity**:  
+  Publishing snapshots and releases to different repositories is a common best practice,  
+  but correctly configuring dynamic repository selection based on the environment (e.g., CI branch, tag, or manual trigger) usually requires complex Gradle scripts or CI-specific logic.  
+  Setting up multiple publications aware of the environment adds fragility and overhead to the build configuration.
+- **Dynamic Version Management**:  
+  In a real multi-module project, one module (e.g., an application) often needs to consume another module (e.g., an API) as an artifact built during the same process.  
+  Without consistent, dynamic versioning handled inside Gradle, builds are forced to rely on external CI scripts to calculate and inject versions manually, leading to fragile and error-prone pipelines.
 
 ## 🚀 Solution
 
